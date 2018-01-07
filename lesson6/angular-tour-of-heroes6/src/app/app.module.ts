@@ -7,6 +7,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { HeroService } from './hero.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { MessageService } from './message.service';
     BrowserModule,
     FormsModule
   ],
-  providers: [MessageService],
+  providers: [ HeroService, MessageService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
